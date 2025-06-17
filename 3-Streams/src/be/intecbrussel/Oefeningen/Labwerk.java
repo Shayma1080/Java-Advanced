@@ -2,6 +2,7 @@ package be.intecbrussel.Oefeningen;
 
 import java.sql.SQLOutput;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -27,9 +28,12 @@ public class Labwerk {
 
     //Oefening 4:
     public List<String> filterC(List<String> strings4){
-        strings4.stream().filter(e -> e.startsWith("a")).map(e -> e.length()>3).limit(5).sorted(p1 -> p1,p2 -> p2.Compareto.P1).forEach(e -> System.out.println(e));
-
-        return reverse;
+        System.out.println(">>> Je suis dans filterC et je trie");
+        strings4.stream()
+                .filter(e -> e.startsWith("a") && e.length()>3)
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());
+        return strings4;
     }
 
 }

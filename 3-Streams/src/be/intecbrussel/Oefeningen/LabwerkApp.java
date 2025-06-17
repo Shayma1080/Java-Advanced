@@ -12,12 +12,12 @@ public class LabwerkApp {
         labwerk.toUppercase(mystring1);
 
         //Oefening 2:
-        List<String> mystring2 = Arrays.asList("Basilic", "World", "waar", "is", "daar");
+        List<String> mystring2 = Arrays.asList("Basilic", "World", "ardennen", "is", "daar");
         labwerk.filterA(mystring2);
         //Oefening 3:
         labwerk.filterB(mystring2);
 
         //Oefening 4:
-        labwerk.filterC(mystring2);
+        System.out.println(labwerk.filterC(mystring2));
     }
 }
