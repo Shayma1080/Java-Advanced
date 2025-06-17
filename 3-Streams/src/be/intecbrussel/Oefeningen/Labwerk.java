@@ -86,7 +86,7 @@ public class Labwerk {
 
         return  strings8;
     }
-    //Oefening 10:
+    //Oefening 11:
     public List<Integer> geenDouble(List<Integer> integers3){
         integers3.stream()
                 .distinct() // verwijdert dubbele elementen
