@@ -27,7 +27,7 @@ public class Labwerk {
 
     //Oefening 4:
     public List<String> filterC(List<String> strings4){
-        strings4.stream().filter(e -> e.startsWith("a")).map(e -> e.length()>3).limit(5).sorted(p1,p2 -> p2.Compareto).forEach(e -> System.out.println(e));
+        strings4.stream().filter(e -> e.startsWith("a")).map(e -> e.length()>3).limit(5).sorted(p1 -> p1,p2 -> p2.Compareto.P1).forEach(e -> System.out.println(e));
 
         return reverse;
     }
