@@ -2,6 +2,8 @@ package be.intecbrussel.Oefeningen;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
+
 
 public class LabwerkApp {
     public static void main(String[] args) {
@@ -21,7 +23,7 @@ public class LabwerkApp {
 
         //Oefening 4:
         System.out.println("\nOefening 4: ");
-        labwerk.filterC(mystring1);
+        System.out.println(labwerk.filterC(mystring1));
 
         //Oefening 5:
         System.out.println("\nOefening 5: ");
@@ -29,12 +31,16 @@ public class LabwerkApp {
 
         //Oefening 6:
         System.out.println("\nOefening 6: ");
-        labwerk.filterE(mystring1);
+        System.out.println(labwerk.filterE(mystring1));
 
         //Oefening 7:
-        System.out.println("\nOefening 7: ");
+//        System.out.println("\nOefening 7: ");
         List<Integer> numbers = Arrays.asList(6,7,3,22,5,3);
-        labwerk.gemiddelde(numbers);
+//        List<Double> numbers1 = Arrays.asList(6.1,7,3,22,5.4,3);
+//        Labwerk app = new Labwerk();
+//        Double resultaat = app.gemiddelde(numbers1);
+
+//        System.out.println("Gemiddelde van even getallen: " + resultaat);
 
         //Oefening 8:
         System.out.println("\nOefening 8: ");
