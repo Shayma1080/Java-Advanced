@@ -17,6 +17,7 @@ public class LabwerkApp {
         //Oefening 2:
         System.out.println("\nOefening 2: ");
         labwerk.filterA(mystring1);
+
         //Oefening 3:
         System.out.println("\nOefening 3: ");
         labwerk.filterB(mystring1);
@@ -27,7 +28,7 @@ public class LabwerkApp {
 
         //Oefening 5:
         System.out.println("\nOefening 5: ");
-        labwerk.filterD(mystring1);
+        System.out.println(labwerk.filterD(mystring1));
 
         //Oefening 6:
         System.out.println("\nOefening 6: ");

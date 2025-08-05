@@ -1,5 +1,6 @@
 package be.intecbrussel.Oefeningen;
 
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
@@ -10,7 +11,8 @@ public class Labwerk {
     public List<String> toUppercase(List<String> strings1) {
         strings1.stream()
                 .map(s -> s.toUpperCase()) // kan ook zo gebruikt '.map(String::toUpperCase)'
-                .collect(Collectors.toList()); // kan ook zo gebruikt '.toList'
+                .collect(Collectors.toList()) // kan ook zo gebruikt '.toList'
+                .forEach(s-> System.out.println(s));
         return strings1;
     }
     //Oefening 2:
@@ -18,7 +20,8 @@ public class Labwerk {
 
         strings2.stream()
                 .filter(string ->string.startsWith("a"))
-                .collect(Collectors.toList());
+                .collect(Collectors.toList())
+                .forEach(string -> System.out.println(string));
         return strings2;
     }
 
@@ -26,7 +29,8 @@ public class Labwerk {
     public List<String> filterB(List<String> strings3){
         strings3.stream()
                 .filter(e -> e.startsWith("a") && e.length() > 3)
-                .collect(Collectors.toList());
+                .collect(Collectors.toList())
+                .forEach(s -> System.out.println(s));
         return strings3;
     }
 
@@ -42,12 +46,11 @@ public class Labwerk {
     }
     //Oefening 5:
     public List<String> filterD(List<String> strings5){
-        strings5.stream()
-                .filter(e -> e.startsWith("a") && e.length()>3)
+        return strings5.stream()
+                .filter(e -> e.startsWith("a") && e.length() > 3)
                 .sorted(Comparator.reverseOrder())
-                .collect(Collectors.joining(" ,"));
+                .collect(Collectors.toList());
 
-        return strings5;
     }
     //Oefening 6:
     public String filterE(List<String> strings6){
